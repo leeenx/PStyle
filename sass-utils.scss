@@ -1,0 +1,18 @@
+// mask-hack
+%mask-hack {
+    filter: blur(0);
+    transform: translate3d(0, 0, 0);
+    @supports(-webkit-mask-repeat: repeat) {
+        // 高端安卓 与 ios 能识别
+        filter: none;
+    }
+}
+
+// flex 垂直居中
+%flex-middle {
+  box-align: center; 
+	align-items: center; 
+}
+
+// 镂空三角
+
